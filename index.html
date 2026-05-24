@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>老虎机配件展示</title>
+    <style>
+      :root {
+        --red-900: #4a0006;
+        --red-700: #8f000d;
+        --red-500: #d81b24;
+        --red-300: #ff6f75;
+        --gold: #ffd166;
+        --text-light: #fff5f5;
+        --card-bg: rgba(255, 255, 255, 0.08);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Microsoft YaHei", "PingFang SC", sans-serif;
+        color: var(--text-light);
+        background: radial-gradient(circle at top, var(--red-300), var(--red-500), var(--red-900));
+        min-height: 100vh;
+      }
+
+      .hero {
+        text-align: center;
+        padding: 3rem 1rem 2rem;
+      }
+
+      .hero h1 {
+        font-size: clamp(1.8rem, 4vw, 3rem);
+        margin: 0 0 0.8rem;
+        letter-spacing: 0.08em;
+      }
+
+      .hero p {
+        margin: 0 auto;
+        max-width: 680px;
+        line-height: 1.7;
+        color: #ffe5e5;
+      }
+
+      .container {
+        max-width: 1120px;
+        margin: 0 auto;
+        padding: 0 1rem 3rem;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+        gap: 1rem;
+      }
+
+      .card {
+        background: var(--card-bg);
+        backdrop-filter: blur(4px);
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        border-radius: 14px;
+        padding: 1.2rem;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+      }
+
+      .tag {
+        display: inline-block;
+        font-size: 0.78rem;
+        border: 1px solid rgba(255, 209, 102, 0.75);
+        color: var(--gold);
+        padding: 0.2rem 0.5rem;
+        border-radius: 999px;
+        margin-bottom: 0.8rem;
+      }
+
+      .card h2 {
+        margin: 0 0 0.65rem;
+        font-size: 1.25rem;
+      }
+
+      .card p {
+        margin: 0;
+        line-height: 1.6;
+        color: #ffecec;
+      }
+
+      .feature {
+        margin-top: 2rem;
+        background: rgba(74, 0, 6, 0.45);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 14px;
+        padding: 1rem 1.2rem;
+      }
+
+      .feature h3 {
+        margin: 0 0 0.8rem;
+        color: var(--gold);
+      }
+
+      .feature ul {
+        margin: 0;
+        padding-left: 1.2rem;
+        line-height: 1.8;
+      }
+
+      footer {
+        text-align: center;
+        font-size: 0.92rem;
+        color: #ffdede;
+        opacity: 0.9;
+        padding: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="hero">
+      <h1>老虎机配件展示中心</h1>
+      <p>
+        红色主题设计，集中呈现老虎机常用关键配件。适用于展会展示、门店介绍或线上产品目录，帮助客户快速了解核心部件功能。
+      </p>
+    </header>
+
+    <main class="container">
+      <section class="grid" aria-label="配件列表">
+        <article class="card">
+          <span class="tag">显示模组</span>
+          <h2>高清主屏幕</h2>
+          <p>高亮度 LED 面板，支持动态彩金动画与多语言界面，提升视觉冲击力与玩家停留时间。</p>
+        </article>
+
+        <article class="card">
+          <span class="tag">输入设备</span>
+          <h2>耐用按键面板</h2>
+          <p>采用防尘防水微动开关，按压反馈清晰，支持长期高频使用，维护周期更长。</p>
+        </article>
+
+        <article class="card">
+          <span class="tag">支付系统</span>
+          <h2>票据与硬币模块</h2>
+          <p>集成票据识别与硬币找零组件，识别速度快、误差率低，提升收款稳定性。</p>
+        </article>
+
+        <article class="card">
+          <span class="tag">装饰组件</span>
+          <h2>灯光与边框套件</h2>
+          <p>可编程 RGB 灯带与金属边框配件，支持主题联动效果，增强设备整体辨识度。</p>
+        </article>
+      </section>
+
+      <section class="feature" aria-label="服务说明">
+        <h3>可选服务</h3>
+        <ul>
+          <li>按机型提供配件兼容性清单</li>
+          <li>支持红色主题 UI 定制与开机画面设计</li>
+          <li>提供批量采购方案与售后维护建议</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>© 2026 老虎机配件展示页面 · Red Theme Showcase</footer>
+  </body>
+</html>
